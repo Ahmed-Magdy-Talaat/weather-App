@@ -61,7 +61,7 @@ function getDay() {
 async function fetchData(region) {
   try {
     regionData = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=48eed6a0aa9b4cd5889200026231108&q=${region}&days=7
+      `https://api.weatherapi.com/v1/forecast.json?key=48eed6a0aa9b4cd5889200026231108&q=${region}&days=7
 `
     );
     if (!regionData.ok) {
